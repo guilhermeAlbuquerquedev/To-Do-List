@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+:root{
+    --corFundo: #C3CDD9;
+    --corBox: #fff;
+    --CorDetail: #2E90F3;
+    --TextColor: #2A2A36;
+}
+
+body{
+    font-family: "Poppins", sans-serif;;
+    background-color: var(--corFundo);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul{
+    list-style: none;
+}
+
+#app{
+    background-color: var(--corBox);
+    min-height: 450px;
+    width: 500px;
+    border-radius: 14px;
+    box-shadow: 8px 8px 15px rgba(102, 102, 102, 0.205);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 20px;
+}
+
+.itens{
+    padding-top: 35px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    font-size: 22px;
+    color: var(--TextColor);
+    padding-bottom: 25px;
+}
+
+.inf{
+    margin-bottom: 20px;
+}
+
+input[type="text"]{
+    height: 40px;
+    width: 65%;
+    border-radius: 4px;
+    border: 1px solid #d4d3d3;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+input[type="checkbox"]{
+margin-right: 10px;
+}
+
+button{
+    height: 40px;
+    width: 20%;
+    background-color: var(--CorDetail);
+    color: var(--corBox);
+    border: 0px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-left: 12px;
+}
+
+li{
+    border: 1px solid #d4d3d3;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+a{
+    width: 30px;
+    height: 30px;
+    background-size: cover;  
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    margin-left: 10px;
+    text-decoration: none;
+
+}
+
+.juntos{
+    padding: 5px;
+}
+
+@media  (max-width:420px) {
+    button{
+        width: 26%;
+        font-size: 12px;
+    }
+ }
