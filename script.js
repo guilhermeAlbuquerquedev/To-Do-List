@@ -66,10 +66,6 @@ function renderTasks(){
             deleteingTask(i)
         }
 
-
-
-
-
         divd.appendChild(checkbox);
         divd.appendChild(CreateText);
 
@@ -78,14 +74,8 @@ function renderTasks(){
         CreateLi.appendChild(createA);
         listElement.appendChild(CreateLi);
 
-
     }
 }
-
-
-
-
-
 
 //deleting
 
@@ -98,6 +88,5 @@ function deleteingTask(position){
 function saveData(){
     localStorage.setItem("@data" , JSON.stringify(tasklist))
 }  
-
 
 renderTasks();
